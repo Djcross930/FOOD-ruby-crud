@@ -13,3 +13,11 @@ Content-Type: application/json
   "name": "burger",
   "price": 5
 }
+###
+
+PATCH http://localhost:3000/foods/4
+Content-Type: application/json
+
+{
+  "name": "the burger"
+}

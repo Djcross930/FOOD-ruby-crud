@@ -17,6 +17,14 @@ class FoodsController < ApplicationController
     render json: food.as_json
   end
 
+  def update
+    food = Food.find_by(id: params[:id])
+    food.name = params[:name] || food.name
+    food.price = params[:price] || food.price
+    food.save
+    render json: food.as_json
+  end
+
 
 
 
