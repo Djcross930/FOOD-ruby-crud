@@ -25,9 +25,9 @@ class FoodsController < ApplicationController
     render json: food.as_json
   end
 
-
-
-
-
-
+  def destroy
+    food = Food.find_by(id: params[:id])
+    food.destroy
+    render json: {message: "Food destroyed"}
+  end
 end

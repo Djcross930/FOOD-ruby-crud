@@ -21,3 +21,7 @@ Content-Type: application/json
 {
   "name": "the burger"
 }
+
+###
+
+DELETE http://localhost:3000/foods/4
