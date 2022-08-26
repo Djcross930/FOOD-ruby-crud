@@ -9,6 +9,15 @@ class FoodsController < ApplicationController
     render json: food.as_json
   end
 
+  def create
+    food = Food.new
+    food.name = params[:name]
+    food.price = params[:price]
+    food.save
+    render json: food.as_json
+  end
+
+
 
 
 

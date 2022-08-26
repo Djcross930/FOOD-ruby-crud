@@ -3,3 +3,13 @@ GET http://localhost:3000/foods
 ####
 
 GET http://localhost:3000/foods/1
+
+###
+
+POST http://localhost:3000/foods
+Content-Type: application/json
+
+{
+  "name": "burger",
+  "price": 5
+}
